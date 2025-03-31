@@ -1,16 +1,13 @@
 import tkinter as tk
-
 window = tk.Tk()
-
 for i in range(3):
     for j in range(3):
-        frame = tk.Frame(
+        frame=tk.Frame(
             master=window,
             relief=tk.RAISED,
             borderwidth=1
         )
-        frame.grid(row=i, column=j, padx=5, pady=5)
-        label = tk.Label(master=frame, text=f"ROW {i}\nColumn {j}")
+        frame.grid(row=i,column=j,padx=5,pady=5)
+        label=tk.Label(master=frame,text=f"Row {i}\n https://github.com/kashancoder123/python-Tkinter-2.gitColumn {j}")
         label.pack()
-
     window.mainloop()
