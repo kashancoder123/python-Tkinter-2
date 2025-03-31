@@ -8,6 +8,6 @@ for i in range(3):
             borderwidth=1
         )
         frame.grid(row=i,column=j,padx=5,pady=5)
-        label=tk.Label(master=frame,text=f"Row {i}\n https://github.com/kashancoder123/python-Tkinter-2.gitColumn {j}")
+        label=tk.Label(master=frame,text=f"Row {i}\n Column {j}")
         label.pack()
     window.mainloop()
